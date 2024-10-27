@@ -9,5 +9,3 @@
 4. Сравнение показательных данных и расчётов 
 5. Анализ проделанной работы и составление отчёта
 Краткое описание: моделирование миссии «Марс - 3» на базе Kerbal Space Program и сравнение полученных данных с расчётами."
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)

@@ -23,3 +23,6 @@
 4. Черников Максим (математик, программист)
 
 #
+
+https://drive.google.com/file/d/1DAGgmWqVjPiUDfxU_c6vbZ8QMsCWEwSM/view?usp=sharing
+Ссылка на реконструкцию миссии Марс-3 в условиях KSP

@@ -24,6 +24,6 @@
 
 #
 
-https://drive.google.com/file/d/1DAGgmWqVjPiUDfxU_c6vbZ8QMsCWEwSM/view?usp=sharing
+https://drive.google.com/file/d/1DAGgmWqVjPiUDfxU_c6vbZ8QMsCWEwSM/view?usp=drive_link
 
 Ссылка на реконструкцию миссии Марс-3 в условиях KSP

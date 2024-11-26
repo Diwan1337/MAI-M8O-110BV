@@ -1,29 +1,28 @@
 import matplotlib.pyplot as plt
-
 import numpy as np
 
-# параметры ракеты и взлёта
+# Параметры ракеты и взлёта
+time = 130      # Время работы первой ступени (сек)
+m0 = 750000     # Начальная масса корабля (кг)
+Ft = 9000000    # Тяга первой ступени (Н)
+k = 3400        # Скорость расхода топлива (кг/с)
+b = -0.0005     # Изменение угла движения ракеты (рад/с)
+cf = 0.32       # Коэффициент сопротивления
+S = 14.89       # Площадь лобового сопротивления (м²)
 
-time = 85  # время работы первой ступени в сек
-m0 = 431 * 10 ** 3  # начальная масса корабля в кг
-Ft = 6781.2 * 10 ** 3  # тяга ускорителя 1-ой ступени в кН
-k = 2470.6  # скорость расхода топлива в кг/с
-b = -0.001  # изменение угла движения ракеты рад/с
-cf = 0.2  # коэффициент сопротивления
-S = 133.01  # площадь лобового сопротивления
-
-# константы
+# Константы
 e = 2.72
-shag = 0.1  # шаг (по желанию изменяемая переменная)
-Ang0 = np.pi / 2
+shag = 0.1      # Шаг расчета (сек)
+Ang0 = np.pi / 2  # Стартовый угол (90 градусов)
 Ang1 = Ang0 + time * b
-G = 9.81
-M_A = 0.29
-R = 8.31
-T = 300
-P_0 = 10 ** 5
+G = 9.81        # Ускорение свободного падения (м/с²)
+M_A = 0.029     # Молекулярная масса воздуха (кг/моль)
+R = 8.31        # Газовая постоянная (Дж/(моль·К))
+T = 300         # Температура (К)
+P_0 = 10 ** 5   # Атмосферное давление (Па)
 GAZ_P = M_A / (R * T)
 
+# Переменные
 x_values = [0]
 y_values = [0]
 vx_values = [0]
@@ -38,13 +37,14 @@ vy = 0
 ax = 0
 ay = 0
 
-for i in range(int(time // shag)):  # рассчитываем n сек
+# Расчет траектории
+for i in range(int(time // shag)):  # Рассчитываем траекторию на n секунд
     t = i * shag
-    rho = (GAZ_P * P_0) * (e ** (-G * y * GAZ_P))
-    f_cx = cf * S * (rho * (vx_values[-1] ** 2) * 0.5)
-    f_cy = cf * S * (rho * (vy_values[-1] ** 2) * 0.5)
-    ax = ((Ft) * np.cos(Ang0 + b * t) - f_cx)/(m0 - k * t)
-    ay = ((Ft) * np.sin(Ang0 + b * t) - f_cy)/(m0 - k * t) - G
+    rho = (GAZ_P * P_0) * (e ** (-G * y * GAZ_P))  # Плотность атмосферы
+    f_cx = cf * S * (rho * (vx_values[-1] ** 2) * 0.5)  # Сопротивление по X
+    f_cy = cf * S * (rho * (vy_values[-1] ** 2) * 0.5)  # Сопротивление по Y
+    ax = ((Ft) * np.cos(Ang0 + b * t) - f_cx) / (m0 - k * t)
+    ay = ((Ft) * np.sin(Ang0 + b * t) - f_cy) / (m0 - k * t) - G
     vx = vx_values[-1] + ax * shag
     vy = vy_values[-1] + ay * shag
     x = x_values[-1] + vx * shag
@@ -56,16 +56,15 @@ for i in range(int(time // shag)):  # рассчитываем n сек
     x_values.append(x)
     y_values.append(y)
 
+# Рассчитываем скорость
+velocity = [((vx_values[i]) ** 2 + vy_values[i] ** 2) ** 0.5 for i in range(len(vx_values))]
 
-velocity = [((vx_values[i]) ** 2 + vy_values[i] ** 2)
-            ** 0.5 for i in range(len(vx_values))]
-# print([((vx_values[::10][i]) ** 2 + vy_values[::10][i] ** 2) ** 0.5 for i in range(time)])
-# print(y_values[::100])
-# plt.plot(range(0, time), vx_values[::int(shag ** -1)])
-# plt.xlabel("время, с")
-# plt.ylabel("высота, м")
-# plt.plot(range(0, time), y_values[::int(shag ** -1)])
-plt.xlabel("время, с")
-plt.ylabel("скорость, м/с")
-plt.plot(range(0, time), velocity[::int(shag ** -1)])
+# Построение графика скорости
+plt.figure(figsize=(10, 5))
+plt.xlabel("Время, с")
+plt.ylabel("Скорость, м/с")
+plt.title("График скорости ракеты Протон-К")
+plt.plot(range(0, int(time)), velocity[::int(shag ** -1)], label="Скорость")
+plt.grid(color='gray', linestyle='--', linewidth=0.5)
+plt.legend()
 plt.show()

@@ -27,3 +27,5 @@
 https://drive.google.com/file/d/1DAGgmWqVjPiUDfxU_c6vbZ8QMsCWEwSM/view?usp=drive_link
 
 Ссылка на реконструкцию миссии Марс-3 в условиях KSP
+![image](https://github.com/user-attachments/assets/4381772e-06c2-4037-8d10-b76c12f8d6ae)
+![image](https://github.com/user-attachments/assets/e4bb4ab5-096a-44c6-989a-ad515aeb9f7c)

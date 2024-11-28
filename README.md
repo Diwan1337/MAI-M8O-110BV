@@ -37,4 +37,6 @@
 ![image](https://github.com/user-attachments/assets/93277862-4935-46ed-bcf9-fcbe89c78828)
 ![image](https://github.com/user-attachments/assets/c5a19b27-6ed7-4f9c-909d-c7a5d944417f)
 
+## Лицензия
 
+Этот проект распространяется под лицензией MIT. См. файл [LICENSE](LICENSE) для получения дополнительной информации.

@@ -28,7 +28,7 @@
 
 - [Код для построения графика на основе полёта ракеты](https://github.com/Diwan1337/MAI-M8O-110BV/blob/main/KSP%20-%20М8О-110БВ%20PSVK/Poron-k_krpc.py) — скрипт, собирающий данные о полёте ракеты и создающий визуализацию зависимости скорости от времени.
 - [Расчёт математической модели скорости](https://github.com/Diwan1337/MAI-M8O-110BV/blob/main/KSP%20-%20М8О-110БВ%20PSVK/Proton-K_model.py) — Python-скрипт, реализующий расчёты по математической модели для сравнения с симуляцией в KSP.
-- [Документация проекта](https://github.com/Diwan1337/MAI-M8O-110BV/blob/main/KSP%20-%20М8О-110БВ%20PSVK/МАРС-3%20—%20документация%20(1).pdf) или [тут](https://docs.google.com/document/d/1DAdvT1hMoYadQVsKDf00b8iH9FNpxLFGSwjMnj5GAJ0/edit?usp=sharing) — полный отчёт с описанием этапов работы, теории и выводов.
+- [Документация проекта](https://github.com/Diwan1337/MAI-M8O-110BV/blob/main/KSP%20-%20М8О-110БВ%20PSVK/МАРС-3%20—%20документация%20(1).pdf) или [тут](https://docs.google.com/document/d/1DJL0mZcFHozLpWZZX9tR29NyMMnfmoPBIqXHlWvgoJ0/edit?usp=sharing) — полный отчёт с описанием этапов работы, теории и выводов.
 - [Видео-отчёт](https://youtu.be/2PCgaGePo_I) или [тут на гугл диске](https://drive.google.com/file/d/19WO_zDKYbbFxJ6xyIbVS7xdPJHycRMyf/view?usp=sharing)
 - [Крафт ракеты "Протон-К" с 4 ступенями](https://github.com/Diwan1337/MAI-M8O-110BV/blob/main/KSP%20-%20М8О-110БВ%20PSVK/Марс-3.craft) — готовая модель ракеты для использования в KSP.
 - [Презентация в формате pptx](https://github.com/Diwan1337/MAI-M8O-110BV/blob/main/KSP%20-%20М8О-110БВ%20PSVK/Untitled%20(1).pptx), [а также есть в формате pdf](https://github.com/Diwan1337/MAI-M8O-110BV/blob/main/KSP%20-%20М8О-110БВ%20PSVK/Untitled%20(1).pdf)

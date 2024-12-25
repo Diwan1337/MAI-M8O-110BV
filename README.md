@@ -37,7 +37,8 @@
 Графики:
 ![image](https://github.com/user-attachments/assets/93277862-4935-46ed-bcf9-fcbe89c78828)
 ![image](https://github.com/user-attachments/assets/c5a19b27-6ed7-4f9c-909d-c7a5d944417f)
-![image](https://github.com/user-attachments/assets/fa532782-2fce-4300-9833-24750d058034)
+![image](https://github.com/user-attachments/assets/48c7d897-a6d5-42f1-aaf6-d9690e8774e3)
+
 
 
 ## Лицензия
